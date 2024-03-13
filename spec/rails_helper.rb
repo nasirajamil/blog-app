@@ -7,6 +7,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'simplecov'
 require "simplecov-lcov"
+require 'shoulda/matchers'
 
 SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
   SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
